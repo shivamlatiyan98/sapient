@@ -6,7 +6,7 @@ Topic: This is the anagram checker application build in maven and pipeline
 
 configuration:
 mavenl:local maven installation
-
+finalTrigger : Source code repository for pipeline
 jdkl:local jdk installation
 
 sir we can change the config as per requiremnts.
