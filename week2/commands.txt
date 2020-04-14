@@ -1,0 +1,46 @@
+1.replica 1 config file
+dbpath="C:\data1\db\path
+logpath="C:\data1\log\mongod.log\
+portno:27051
+
+
+2.repilca 2 config file
+dbpath="C:\data2\db\path
+logpath="C:\data2\log\mongod.log\
+portno:27052
+
+
+3.mongod --dbpath "C:\Program Files\MongoDB\Server\4.0\data"  --port 27017 --storageEngine=wiredTiger --journal --replSet sapient
+
+
+Primary Server
+1.rsconf={_id:"sapient",members:[{_id:0,host:"localhost:27017"}]}
+this is file created in this primary Server.
+
+Command prompt
+
+5.mongod --dbpath "C:\data1\db" --logpath "C:\data1\log\mongod.log" --port 27050 --storageEngine=wiredTiger --journal --replSet sapient
+
+6.mongod --dbpath "C:\data2\db" --logpath "C:\data2\log\mongod.log" --port 27051 --storageEngine=wiredTiger --journal --replSet sapient
+
+7.rs.add("localhost:27050")
+
+8.rs.add("localhost:27052")
+
+9.mongo --port 27050;
+
+10mongo --port 27052;
+
+11rs.slaveOk()
+
+1211rs.slaveOk()
+
+13 Secondary slave commands port no 27050
+
+ db.movies.find({weight:90}).pretty()
+ db.movies.find({weight:{$lt:50}}).pretty()    
+
+
+
+
+
