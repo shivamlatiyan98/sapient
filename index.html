@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+
+
+
+	</title>
+
+
+
+</head>
+<style type="text/css">
+	
+	
+
+	div{
+		
+		font-family: sans-serif;
+	}
+
+    
+
+
+
+	@media only screen and (min-device-width : 786px) and (min-device-height : 600px) {
+           div  {
+            font-family: Arial;
+            color: blue;
+            font-size: 36
+
+		       }
+        
+
+
+     }
+
+
+@media only screen and (device-width : 300px) and (device-height : 350px) {
+div {
+            font-family: Helvetica;
+            color: red;
+            font-size: 24
+
+		  }
+        
+
+
+}
+
+
+@media only screen and (device-width : 99px) and (device-height : 99px) {
+
+  div {
+            font-family: Georgia
+            color: purple;
+            font-size: 18
+
+		 
+}
+	
+
+
+
+
+
+</style>
+
+
+
+
+<body>
+   <h1> Routing in Satellite
+
+    <div id="a">
+    	<p>
+A satellite system together with gateways and fixed terrestrial networks as
+Routing in the fixed segment (on earth) is achieved
+as usual, while two different solutions exist for the satellite network in space. If
+satellites offer ISLs, traffic can be routed between the satellites. If not, all traffic
+is relayed to earth, routed there, and relayed back to a satellite.
+Assume two users of a satellite network exchange data. If the satellite
+system supports ISLs, one user sends data up to a satellite and the satellite forwards it to the one responsible for the receiver via other satellites. This last
+satellite now sends the data down to the earth. This means that only one uplink
+and one downlink per direction is needed. The ability of routing within the
+satellite network reduces the number of gateways needed on earth.
+If a satellite system does not offer ISLs, the user also sends data up to a satellite, but now this satellite forwards the data to a gateway on earth. Routing takes
+place in fixed networks as usual until another gateway is reached which is
+responsible for the satellite above the receiver. Again data is sent up to the satellite which forwards it down to the receiver. This solution requires two uplinks
+and two downlinks. Depending on the orbit and the speed of routing in the
+satellite network compared to the terrestrial network, the solution with ISLs
+might offer lower latency. The drawbacks of ISLs are higher system complexity
+due to additional antennas and routing hard- and software for the satellites.
+
+
+    	</p>
+
+
+    </div>
+
+
+
+</body>
+</html>
